@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-cream: #FAF7F2;
+  --color-cream-light: #FDFCF9;
+  --color-cream-dark: #F2ECE1;
+  --color-espresso: #22130C;
+  --color-espresso-light: #341F14;
+  --color-espresso-muted: #6B5547;
+  --color-gold: #C99738;
+  --color-gold-light: #E5B85E;
+  --color-gold-dark: #A57822;
+}
+
+/* Custom subtle noise grain overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(34, 19, 12, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-grain-dark {
+  background-image: radial-gradient(rgba(242, 236, 225, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Text glow & subtle gold reflections */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E5B85E 0%, #C99738 50%, #9B701D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, rgba(229, 184, 94, 0.6), rgba(201, 151, 56, 0.2)) 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8C7B0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C99738;
+}
